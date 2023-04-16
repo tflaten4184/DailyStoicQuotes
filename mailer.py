@@ -13,7 +13,7 @@ def send_mail(content):
         subscribersList = [line.strip() for line in subscribersFile]
 
         for receiver in subscribersList:
-            email_sender = "stoicquotes365@gmail.com"
+            email_sender = os.environ['botEmail']
             email_password = os.environ['apikey']
             email_receiver = receiver
 
