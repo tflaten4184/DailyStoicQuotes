@@ -37,6 +37,6 @@ if __name__ == "__main__":
     # print("main")
     # print(get_today_quote(quotes_map))
     content = mapper.get_today_quote(quotes_map)
-    content += """\n-----------------------\n\nIf you'd like to be removed from this email list, please reach out to tflaten4184@gmail.com to request removal."""
+    content += f"""\n-----------------------\n\nIf you'd like to be removed from this email list, please reach out to {os.environ['maintainerEmail']} to request removal."""
     print(content)
     send_mail(content)
