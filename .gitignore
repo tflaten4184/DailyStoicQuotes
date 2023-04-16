@@ -1,5 +1,6 @@
 DailyStoic.pdf
 RawOutput.txt
+ProdSource.txt
 __pycache__
 creds.txt
 .env
