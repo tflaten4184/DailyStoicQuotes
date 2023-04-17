@@ -33,6 +33,13 @@ def send_mail(content):
                 smtp.sendmail(email_sender, email_receiver, em.as_string())
 
 if __name__ == "__main__":
+
+    # Logfile for debugging .env variables
+    # with open("logfile.txt", "w") as logfile:
+    #     logfile.write(os.environ['botEmail'])
+    #     logfile.write(os.environ['apikey'])
+    #######
+
     quotes_map = mapper.get_quotes_map()
     # print("main")
     # print(get_today_quote(quotes_map))

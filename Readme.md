@@ -19,7 +19,9 @@ maintainerEmail=...
 ```
 * List of subscribers (email addresses), subscribersList.txt. Each email address must be on it's own line.
 * Text file ProdSource.txt containing the text from the book. (Omitted here due to copyright)
+* `run.bat`, which needs to have the correct path to the project directory. This is necessary for activating the virtual environment with Task Scheduler to make use of the appropriate environment variables.
 
-Once that has been setup, you can schedule the script to run daily at your preferred time using your OS scheduling tool. For Windows, use Task Scheduler.
+Once that has been setup, you can schedule the script to run daily at your preferred time using your OS scheduling tool.
+In my case, I used Windows Task Scheduler with the target: `Program: C:\Users\tflat\Desktop\QuotesProject\run.bat`
 
 Currently the subscriber list must be edited manually to add/remove subscribers. It's important to only add people to this list if they've agreed, since the only way to unsubscribe is for the developer to manually edit the text file.
