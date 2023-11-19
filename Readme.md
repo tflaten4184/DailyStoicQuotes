@@ -8,6 +8,21 @@ https://en.wikipedia.org/wiki/The_Daily_Stoic
 
 # Setup instructions
 
+Clone the repo 
+```
+git clone https://github.com/tflaten4184/DailyStoicQuotes.git
+```
+
+CD into the repo and install pipenv: 
+```
+cd DailyStoicQuotes && pip install pipenv
+```
+
+Install dependencies and create a virtual environment
+```
+pipenv install
+```
+
 The script `mailer.py` requires some additional info in order to run:
 * API key for the gmail account you'd like to use. Follow Google's documentation to set this up for your account so that Python can send emails using it. Store this as a virtual environment variable (.env), along with the email address you wish to send from. The file .env should look like this, with the appropriate values substituted for each value:
 ```
